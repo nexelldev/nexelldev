@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexell - Home</title>
+  <link rel="stylesheet" href="home.css" />
+  <!-- Boxicons (ícones) -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Fundo animado -->
+  <div class="animated-background">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <!-- Camada de partículas -->
+  <div class="particle-background" aria-hidden="true">
+    <div class="wrap" id="particles"></div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="header-left">
+      <img src="Images/NexellLg.png" alt="Logo Nexell" class="logo"/>
+      <div class="title">
+        <h1>Nexell Systems</h1>
+        <span>Corporate Portal</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="user-info">
+        <p>Hello, <span id="username">Usuário</span></p>
+        <small>Welcome back</small>
+      </div>
+      <button class="logout-btn" onclick="logout()">Exit</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section class="section-header">
+      <div class="section-badge">
+        <i class='bx bx-star'></i>
+        <span class="badge-text">Business Solutions</span>
+      </div>
+      <h2 class="section-title">Our Products</h2>
+      <p class="section-subtitle">
+        Choose the ideal solution to boost your business with cutting-edge technology.
+      </p>
+    </section>
+
+    <div class="grid">
+      <a class="card" href="chat.html" aria-label="Abrir Nexell Chat">
+        <div class="icon-box blue"><i class='bx bx-message-dots'></i></div>
+        <h4>Nexell Chat</h4>
+        <p>Integrated business communication</p>
+      </a>
+
+      <a class="card" href="pos.html" aria-label="Abrir Nexell POS">
+        <div class="icon-box green"><i class='bx bx-cart'></i></div>
+        <h4>Nexell POS</h4>
+        <p>Complete point of sale system</p>
+      </a>
+
+      <a class="card" href="insights.html" aria-label="Abrir Nexell Insights">
+        <div class="icon-box pink"><i class='bx bx-line-chart'></i></div>
+        <h4>Nexell Insights</h4>
+        <p>Real-time data analysis</p>
+      </a>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>Nexell Systems - Transforming business through automation</p>
+    <small>© 2025 All rights reserved</small>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
